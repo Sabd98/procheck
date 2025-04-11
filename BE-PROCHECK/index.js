@@ -19,7 +19,7 @@ const mongooseOptions = {
  
 };
 // Middleware
-app.use(cors());
+app.use(cors({ origin: 'https://fe-procheck.vercel.app/' }));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
